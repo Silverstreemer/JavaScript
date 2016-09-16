@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>main</title>
+	<script language="javascript">
+		function login(form1)
+			{
+				if(form1.username.value=="s")
+					{
+						if(form1.password.value=="1")
+							{
+								//location.href = "1st.html";
+								//window.open('1st.html','_self',false);
+								//window.open("http://www.google.com/");
+								open("1st.html","_self");//,"_self","_parent","status,menubar=yes,resizable=yes,toolbar=no");
+								
+								
+							}
+						else
+							{
+								alert("You Entered Wrong password");
+							}
+					}
+				else
+					{
+						alert("You Entered Wrong Username");
+						var blankwindow=window.open("","","status,menubar=yes,resizable=yes,toolbar=no");
+						var windowcontent="<html><body bgcolor=pink>"
+						windowcontent+="<h1>NEW WINDOW</h1>"
+						windowcontent+="<form><input type=button name=close value=Close window onClick=window.close()>"
+						windowcontent+="</form></body></html>"
+						blankwindow.document.write(windowcontent);	
+						
+					}
+			}
+	</script>
+	
+</head>
+<body topmagrin="100">
+	<div style="background-color:#9933CC; text-align:right; width:100%">
+		<font face="Harlow Solid Italic" size=72>
+			my friends.com       
+		</font>
+	</div>
+<br><br><br><br>
+<table frame="box" rules="none" border="2" style="border-style:none;" bordercolor="#9933CC" align="center" width="500" height="200" cellspacing="5" cellpadding="5">
+<form>
+<tr >
+	<td bgcolor="#9933CC" colspan="2" align="center"><font size="5">WELCOME TO MY FRIENDS.COM</font></td>
+</tr>
+<tr>
+	<td align="center"><font color="#9933CC">USERNAME</font></td><td align="center"><input type="email" size="25" name="username"></td>
+</tr>
+<tr>
+	<td align="center"><font color="#9933CC">PASSWORD</font></td><td align="center"><input type="password" size="25" name="password"></td>
+</tr>
+<tr>
+	  <td align="center">
+        <input type="image" src="b1.jpg" onClick="login(this.form);" name="image">
+      </td>
+      <td align="center"><input type="image" src="b2.jpg"></td>
+</tr>
+
+</form>
+</table>
+<p><a href="1st.html" target="_parent">hghhghhhh</a></p>
+</body>
+</html>
